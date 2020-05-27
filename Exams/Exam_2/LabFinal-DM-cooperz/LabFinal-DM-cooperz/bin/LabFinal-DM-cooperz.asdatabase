@@ -1,0 +1,844 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>LabFinal-DM-cooperz</ID>
+  <Name>LabFinal-DM-cooperz</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>Telco- Customer- Churn</ID>
+      <Name>Telco- Customer-Churn</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_Telco-Customer-Churn</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15432" scrolltop="-9882" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="34290" y="24765" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Telco-Customer-Churn" left="-9320" top="-4630" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3387" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000c00003b0d000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Telco-Customer-Churn" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-15432</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-9882</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>-9320</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>-4630</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>MIS422_Exam_Churn</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Churn</ID>
+          <Name>Churn</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>Churn</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Contract</ID>
+          <Name>Contract</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>Contract</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Customer ID</ID>
+          <Name>Customer ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>customerID</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Device Protection</ID>
+          <Name>Device Protection</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>DeviceProtection</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Internet Service</ID>
+          <Name>Internet Service</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>InternetService</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Monthly Charges</ID>
+          <Name>Monthly Charges</Name>
+          <Type>Double</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>MonthlyCharges</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Online Backup</ID>
+          <Name>Online Backup</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>OnlineBackup</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Online Security</ID>
+          <Name>Online Security</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>OnlineSecurity</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Payment Method</ID>
+          <Name>Payment Method</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>PaymentMethod</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Streaming Movies</ID>
+          <Name>Streaming Movies</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>StreamingMovies</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Streaming TV</ID>
+          <Name>Streaming TV</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>StreamingTV</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Tech Support</ID>
+          <Name>Tech Support</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>TechSupport</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Tenure</ID>
+          <Name>Tenure</Name>
+          <Type>Long</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>tenure</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Total Charges</ID>
+          <Name>Total Charges</Name>
+          <Type>Double</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Telco-Customer-Churn</TableID>
+                <ColumnID>TotalCharges</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Telco- Customer- Churn-DT</ID>
+          <Name>Telco- Customer- Churn-DT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Churn</ID>
+              <Name>Churn</Name>
+              <SourceColumnID>Churn</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Contract</ID>
+              <Name>Contract</Name>
+              <SourceColumnID>Contract</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Customer ID</ID>
+              <Name>Customer ID</Name>
+              <SourceColumnID>Customer ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Device Protection</ID>
+              <Name>Device Protection</Name>
+              <SourceColumnID>Device Protection</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Internet Service</ID>
+              <Name>Internet Service</Name>
+              <SourceColumnID>Internet Service</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Monthly Charges</ID>
+              <Name>Monthly Charges</Name>
+              <SourceColumnID>Monthly Charges</SourceColumnID>
+              <Usage>Predict</Usage>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Online Backup</ID>
+              <Name>Online Backup</Name>
+              <SourceColumnID>Online Backup</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Online Security</ID>
+              <Name>Online Security</Name>
+              <SourceColumnID>Online Security</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Payment Method</ID>
+              <Name>Payment Method</Name>
+              <SourceColumnID>Payment Method</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Streaming Movies</ID>
+              <Name>Streaming Movies</Name>
+              <SourceColumnID>Streaming Movies</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Streaming TV</ID>
+              <Name>Streaming TV</Name>
+              <SourceColumnID>Streaming TV</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Tech Support</ID>
+              <Name>Tech Support</Name>
+              <SourceColumnID>Tech Support</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Tenure</ID>
+              <Name>Tenure</Name>
+              <SourceColumnID>Tenure</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>Total Charges</ID>
+              <Name>Total Charges</Name>
+              <SourceColumnID>Total Charges</SourceColumnID>
+              <Usage>Predict</Usage>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+          </Columns>
+        </MiningModel>
+        <MiningModel>
+          <ID>Telco-Customer-Churn-LR</ID>
+          <Name>Telco-Customer-Churn-LR</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Churn</ID>
+              <Name>Churn</Name>
+              <SourceColumnID>Churn</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Contract</ID>
+              <Name>Contract</Name>
+              <SourceColumnID>Contract</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Customer ID</ID>
+              <Name>Customer ID</Name>
+              <SourceColumnID>Customer ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Device Protection</ID>
+              <Name>Device Protection</Name>
+              <SourceColumnID>Device Protection</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Internet Service</ID>
+              <Name>Internet Service</Name>
+              <SourceColumnID>Internet Service</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Monthly Charges</ID>
+              <Name>Monthly Charges</Name>
+              <SourceColumnID>Monthly Charges</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column>
+              <ID>Online Backup</ID>
+              <Name>Online Backup</Name>
+              <SourceColumnID>Online Backup</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Online Security</ID>
+              <Name>Online Security</Name>
+              <SourceColumnID>Online Security</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Payment Method</ID>
+              <Name>Payment Method</Name>
+              <SourceColumnID>Payment Method</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Streaming Movies</ID>
+              <Name>Streaming Movies</Name>
+              <SourceColumnID>Streaming Movies</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Streaming TV</ID>
+              <Name>Streaming TV</Name>
+              <SourceColumnID>Streaming TV</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Tech Support</ID>
+              <Name>Tech Support</Name>
+              <SourceColumnID>Tech Support</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Tenure</ID>
+              <Name>Tenure</Name>
+              <SourceColumnID>Tenure</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Total Charges</ID>
+              <Name>Total Charges</Name>
+              <SourceColumnID>Total Charges</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>MIS422 Exam</ID>
+      <Name>MIS422 Exam</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=misbi.cbe.wwu.edu\multi;Persist Security Info=True;Password=;User ID=;Initial Catalog=MIS422Exam</ConnectionString>
+      <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>MIS422_Exam_Churn</ID>
+      <Name>MIS422_Exam_Churn</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>MIS422 Exam</DataSourceID>
+      <Schema>
+        <xs:schema id="MIS422_Exam_Churn" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="MIS422_Exam_Churn" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e5de8b61-1c80-4006-b29c-0dfc9266e42a">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_Telco-Current-Customer" msprop:design-time-name="d2a299b1-9deb-4091-8ccf-fac0a71f0021" msprop:FriendlyName="Telco-Current-Customer" msprop:DbSchemaName="dbo" msprop:DbTableName="Telco-Current-Customer" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="customerID" msprop:design-time-name="2cb6c7eb-0ad9-40f8-9780-368040dc95f1" msprop:DbColumnName="customerID" msprop:FriendlyName="customerID">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="gender" msprop:design-time-name="1443d6d0-0885-4a9b-973a-00d2dd7ff8ef" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SeniorCitizen" msprop:design-time-name="a8cc16cd-6465-456d-aa11-974a807bb9a7" msprop:DbColumnName="SeniorCitizen" msprop:FriendlyName="SeniorCitizen" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Partner" msprop:design-time-name="dcc35b9d-4d1e-4e46-8bb6-67f83face0a6" msprop:DbColumnName="Partner" msprop:FriendlyName="Partner" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Dependents" msprop:design-time-name="eb8e385b-9bd6-4e91-8e0e-7bf9f1214fbe" msprop:DbColumnName="Dependents" msprop:FriendlyName="Dependents" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="tenure" msprop:design-time-name="434e608b-2ee8-4fff-81e5-520366ad7815" msprop:DbColumnName="tenure" msprop:FriendlyName="tenure" type="xs:int" minOccurs="0" />
+                      <xs:element name="PhoneService" msprop:design-time-name="9fbce7ab-1e8a-4006-b183-7d4959acc2a5" msprop:DbColumnName="PhoneService" msprop:FriendlyName="PhoneService" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MultipleLines" msprop:design-time-name="af3cc2fc-5f6d-47e4-804f-42393a9da366" msprop:DbColumnName="MultipleLines" msprop:FriendlyName="MultipleLines" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="InternetService" msprop:design-time-name="6a1bfaa5-2ca0-4af2-afaf-1d0e40de530a" msprop:DbColumnName="InternetService" msprop:FriendlyName="InternetService" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="OnlineSecurity" msprop:design-time-name="a0f7e0ee-4b40-44c2-b5a9-a7f7155f6f82" msprop:DbColumnName="OnlineSecurity" msprop:FriendlyName="OnlineSecurity" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="OnlineBackup" msprop:design-time-name="e5f74c23-079c-4520-955f-97698dc1a229" msprop:DbColumnName="OnlineBackup" msprop:FriendlyName="OnlineBackup" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DeviceProtection" msprop:design-time-name="75d7c426-aab3-43dc-a7dd-73b294c90ddc" msprop:DbColumnName="DeviceProtection" msprop:FriendlyName="DeviceProtection" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="TechSupport" msprop:design-time-name="0ef8b6f3-e7b9-4546-a188-23d2daa50cd4" msprop:DbColumnName="TechSupport" msprop:FriendlyName="TechSupport" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="StreamingTV" msprop:design-time-name="fbbd0d83-72de-48b3-857e-35c8957c247b" msprop:DbColumnName="StreamingTV" msprop:FriendlyName="StreamingTV" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="StreamingMovies" msprop:design-time-name="29410bce-4bca-4931-960e-9a41a61cf633" msprop:DbColumnName="StreamingMovies" msprop:FriendlyName="StreamingMovies" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Contract" msprop:design-time-name="2824e2a9-36b5-42cf-aae3-70fa64c9531a" msprop:DbColumnName="Contract" msprop:FriendlyName="Contract" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PaperlessBilling" msprop:design-time-name="c3c52098-87f3-4abd-9bd5-af5b70705b4d" msprop:DbColumnName="PaperlessBilling" msprop:FriendlyName="PaperlessBilling" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PaymentMethod" msprop:design-time-name="29f641fa-8c53-437b-9c65-56bac6858272" msprop:DbColumnName="PaymentMethod" msprop:FriendlyName="PaymentMethod" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthlyCharges" msprop:design-time-name="ca0f9914-de29-4a74-8fd5-c6133f2dca03" msprop:DbColumnName="MonthlyCharges" msprop:FriendlyName="MonthlyCharges" type="xs:double" minOccurs="0" />
+                      <xs:element name="TotalCharges" msprop:design-time-name="bf6ea441-67e5-43ee-b29f-8d3b93e15745" msprop:DbColumnName="TotalCharges" msprop:FriendlyName="TotalCharges" type="xs:double" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_Telco-Customer-Churn" msprop:design-time-name="b65fbdb7-495e-48f8-ab44-b4d7d6d40c8e" msprop:FriendlyName="Telco-Customer-Churn" msprop:DbSchemaName="dbo" msprop:DbTableName="Telco-Customer-Churn" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="customerID" msprop:design-time-name="d6ae0801-7389-4d89-95a5-2a5c9fdb572f" msprop:DbColumnName="customerID" msprop:FriendlyName="customerID">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="gender" msprop:design-time-name="eafd94fe-efcf-4028-952f-4efd68af87db" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SeniorCitizen" msprop:design-time-name="932ec1f4-0606-4cf7-8b6c-ef41ebe905f5" msprop:DbColumnName="SeniorCitizen" msprop:FriendlyName="SeniorCitizen" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Partner" msprop:design-time-name="69627399-3bdd-4ed7-aabf-3a64c12d6284" msprop:DbColumnName="Partner" msprop:FriendlyName="Partner" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Dependents" msprop:design-time-name="3c22a375-8d02-4b86-86cd-8a2db6d6815d" msprop:DbColumnName="Dependents" msprop:FriendlyName="Dependents" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="tenure" msprop:design-time-name="fb21a7d1-d9be-4e4f-874c-b3f0104b2d2a" msprop:DbColumnName="tenure" msprop:FriendlyName="tenure" type="xs:int" minOccurs="0" />
+                      <xs:element name="PhoneService" msprop:design-time-name="d3e915b6-d85c-40ea-892d-7b2e2525c023" msprop:DbColumnName="PhoneService" msprop:FriendlyName="PhoneService" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MultipleLines" msprop:design-time-name="0e5d53c9-609d-43d3-9f8f-a7daae92d75e" msprop:DbColumnName="MultipleLines" msprop:FriendlyName="MultipleLines" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="InternetService" msprop:design-time-name="08e7b5ac-c5b8-44bf-b764-95be3af5186a" msprop:DbColumnName="InternetService" msprop:FriendlyName="InternetService" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="OnlineSecurity" msprop:design-time-name="0af5f5fb-b009-45bc-9ec6-346908f8a90e" msprop:DbColumnName="OnlineSecurity" msprop:FriendlyName="OnlineSecurity" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="OnlineBackup" msprop:design-time-name="b5cd148b-63e9-41a4-af26-78d2035b4a89" msprop:DbColumnName="OnlineBackup" msprop:FriendlyName="OnlineBackup" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DeviceProtection" msprop:design-time-name="558f0b68-aa4c-4805-8bfa-1beb771aec05" msprop:DbColumnName="DeviceProtection" msprop:FriendlyName="DeviceProtection" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="TechSupport" msprop:design-time-name="02949662-6b0d-4a43-ac2b-6c22cc2f13eb" msprop:DbColumnName="TechSupport" msprop:FriendlyName="TechSupport" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="StreamingTV" msprop:design-time-name="6c6cd0f2-8511-4b38-bdb7-a086b89bdf0a" msprop:DbColumnName="StreamingTV" msprop:FriendlyName="StreamingTV" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="StreamingMovies" msprop:design-time-name="dfdf6979-57be-4e58-aa9b-d8501a17d0b2" msprop:DbColumnName="StreamingMovies" msprop:FriendlyName="StreamingMovies" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Contract" msprop:design-time-name="fd7e883b-a24a-4800-a311-f3f73207987b" msprop:DbColumnName="Contract" msprop:FriendlyName="Contract" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PaperlessBilling" msprop:design-time-name="dff36cf9-7b3d-45b3-90a3-1387278ba3a3" msprop:DbColumnName="PaperlessBilling" msprop:FriendlyName="PaperlessBilling" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PaymentMethod" msprop:design-time-name="41d3fafe-cf14-4159-96e0-cdfce0eea40c" msprop:DbColumnName="PaymentMethod" msprop:FriendlyName="PaymentMethod" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthlyCharges" msprop:design-time-name="ac34e864-7609-47dd-879b-30c0b76cdfec" msprop:DbColumnName="MonthlyCharges" msprop:FriendlyName="MonthlyCharges" type="xs:double" minOccurs="0" />
+                      <xs:element name="TotalCharges" msprop:design-time-name="1ed0bb2c-2531-410d-b7fa-b3e6a795f1ca" msprop:DbColumnName="TotalCharges" msprop:FriendlyName="TotalCharges" type="xs:double" minOccurs="0" />
+                      <xs:element name="Churn" msprop:design-time-name="8a73359c-2721-4916-bc80-1b4fdb30abf6" msprop:DbColumnName="Churn" msprop:FriendlyName="Churn" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Telco-Current-Customer" />
+              <xs:field xpath="customerID" />
+            </xs:unique>
+            <xs:unique name="dbo_Telco-Customer-Churn_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Telco-Customer-Churn" />
+              <xs:field xpath="customerID" />
+            </xs:unique>
+          </xs:element>
+        </xs:schema>
+        <MIS422_Exam_Churn xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>

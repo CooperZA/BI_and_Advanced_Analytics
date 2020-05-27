@@ -1,0 +1,80 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2a4f5f9f-9d53-40c7-ba2c-61a968c591c6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>MIS422 Dataset DM Assignment</ID>
+  <Name>MIS422 Dataset DM Assignment</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>MIS422 Dataset DM Assignment</DataSourceID>
+  <Schema>
+    <xs:schema id="MIS422_x0020_Dataset_x0020_DM_x0020_Assignment" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="MIS422_x0020_Dataset_x0020_DM_x0020_Assignment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c2a906cf-ffb9-4f47-90e1-703c24334ada">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_CatalogCrossSell" msprop:design-time-name="d8978f5d-e87a-4b69-af25-a5cade3078e7" msprop:DbTableName="CatalogCrossSell" msprop:FriendlyName="CatalogCrossSell" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Customer_x0020_Number" msprop:design-time-name="a09b7bd0-84aa-4152-bb9c-06998e218bd2" msprop:DbColumnName="Customer Number" msprop:FriendlyName="Customer Number" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Clothing_x0020_Division" msprop:design-time-name="fc01255c-a278-4e3f-9b4b-17a453045ec7" msprop:DbColumnName="Clothing Division" msprop:FriendlyName="Clothing Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Housewares_x0020_Division" msprop:design-time-name="58a00502-c650-4f14-b59e-4f0a5330ff48" msprop:DbColumnName="Housewares Division" msprop:FriendlyName="Housewares Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Health_x0020_Products_x0020_Division" msprop:design-time-name="1f56beb4-28dc-4e9e-9a5f-b3cc3071ccba" msprop:DbColumnName="Health Products Division" msprop:FriendlyName="Health Products Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Automotive_x0020_Division" msprop:design-time-name="80a0a0a6-ef17-4c7c-be52-84bbda6bfe6d" msprop:DbColumnName="Automotive Division" msprop:FriendlyName="Automotive Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Personal_x0020_Electronics_x0020_Division" msprop:design-time-name="e3382051-d10d-4e4e-afee-df39539dcf5b" msprop:DbColumnName="Personal Electronics Division" msprop:FriendlyName="Personal Electronics Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Computers_x0020_Division" msprop:design-time-name="52e121bd-cb03-40b7-87fd-83e6bd6cc892" msprop:DbColumnName="Computers Division" msprop:FriendlyName="Computers Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Garden_x0020_Division" msprop:design-time-name="43055a4f-ed0e-4d92-9a0d-11a8f2bfebf4" msprop:DbColumnName="Garden Division" msprop:FriendlyName="Garden Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Novelty_x0020_Gift_x0020_Division" msprop:design-time-name="b9252319-2462-430b-9ca0-d7c9a990ad3a" msprop:DbColumnName="Novelty Gift Division" msprop:FriendlyName="Novelty Gift Division" type="xs:double" minOccurs="0" />
+                  <xs:element name="Jewelry_x0020_Division" msprop:design-time-name="af861c70-e4b4-49d3-9ae6-62374a65c6e9" msprop:DbColumnName="Jewelry Division" msprop:FriendlyName="Jewelry Division" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <MIS422_x0020_Dataset_x0020_DM_x0020_Assignment xmlns="" />
+  </Schema>
+</DataSourceView>

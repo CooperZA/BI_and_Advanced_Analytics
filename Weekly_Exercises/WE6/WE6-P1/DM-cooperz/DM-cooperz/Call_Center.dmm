@@ -1,0 +1,563 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5c27a6ce-fbc5-4b0d-b383-9e0ed3c0f5cc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Call Center</ID>
+  <Name>Call_Center</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_FactCallCenter</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3698" scrolltop="-7236" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11404" y="19473" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactCallCenter" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3969" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000810f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactCallCenter" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3698</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7236</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2a38c9e2-3958-4d1f-827b-959e2ca5d8c8">
+    <DataSourceViewID>CallCenter</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e54c983d-95bb-4506-a2ea-b27158e5bef6">
+      <ID>Service Grade 1</ID>
+      <Name>Service Grade Binned</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <DiscretizationMethod>EqualAreas</DiscretizationMethod>
+      <DiscretizationBucketCount>4</DiscretizationBucketCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b73ec2ed-1f63-435c-92c6-1cd786136e8b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0fb67a3f-9e20-41f3-86a4-f80900b2e6b2">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>ServiceGrade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eb4becce-478d-4b2d-b3df-5710ce081d23">
+      <ID>Automatic Responses</ID>
+      <Name>Automatic Responses</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e9d5ee2-209e-4b32-8246-d5b557ea6c81">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91fd7e86-07cc-401b-b2b5-e7530251a2c5">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>AutomaticResponses</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f7220226-6ad4-47c0-8b7a-84f12ae916c1">
+      <ID>Average Time Per Issue</ID>
+      <Name>Average Time Per Issue</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d332a5e-287b-4cf3-ae84-20bac23f6d78">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd808e66-007a-4c8a-ad12-f08919fcb3d4">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>AverageTimePerIssue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="79f3ce87-9dc6-4974-a01f-3f8e3a7b1df8">
+      <ID>Calls</ID>
+      <Name>Calls</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb28ea4d-6006-4c8f-addc-d41f87f8e8a8">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="895b193a-9e26-40b9-93db-3d8ac98ad314">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>Calls</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3ad8009a-18a1-49c2-849c-59a3b0afdff9">
+      <ID>Day Of Week</ID>
+      <Name>Day Of Week</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d110a4ed-8127-4204-9623-99008c57f695">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc5cf50f-fde8-42d0-80f8-858fed57dabb">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>DayOfWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6a9c6c99-3404-4a12-a5ca-2b1d0236b2f3">
+      <ID>Fact Call Center ID</ID>
+      <Name>Fact Call Center ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cbc57f2a-893c-44e3-a381-4b3ba2b1016c">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06159db9-cf61-4f43-8118-9a3785b9466c">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>FactCallCenterID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="018fa5c2-d3cf-47de-adb1-5354108d401e">
+      <ID>Issues Raised</ID>
+      <Name>Issues Raised</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b92399f6-e73d-4495-b886-c2528ab45d75">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad5f9e8d-3286-4976-b3d1-52830837f257">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>IssuesRaised</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="af5a5a77-982f-4762-9271-a3ec64b39763">
+      <ID>Level One Operators</ID>
+      <Name>Level One Operators</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b91c9257-cbad-4fde-8832-f1ce3646a1ab">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="881f8350-7db9-4779-bc44-b9bf36b6e9b0">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>LevelOneOperators</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="71e1ce1e-695d-45f0-81ef-4fa518bf701c">
+      <ID>Level Two Operators</ID>
+      <Name>Level Two Operators</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ed7ce69-40a4-49fc-a4c8-9148ed677639">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18dafbd1-1e1a-48d8-9ebb-86f29f4fe88b">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>LevelTwoOperators</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9157fc52-898c-4d0e-a65d-738827a22960">
+      <ID>Orders</ID>
+      <Name>Orders</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3db5e6a-4dc4-49cd-bef1-11b16be842d2">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f3ac46d-297c-4e25-947e-2362512aedc9">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>Orders</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="61a4db12-9a13-40e0-8d12-7a692c8c3728">
+      <ID>Service Grade</ID>
+      <Name>Service Grade</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de524d6d-4ec9-48fe-8158-107fe5fc22e0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5fe5c90-faab-4e16-8bcd-364459179b23">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>ServiceGrade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ce7f02ee-c2ab-4c79-b976-1311d47450f0">
+      <ID>Shift</ID>
+      <Name>Shift</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba37d097-6a55-44f1-bfa2-95c90c58f98b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f631f3f-968e-4ab6-bfc4-156f57b5c54f">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>Shift</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ea66a0ab-b928-48ac-95ce-1b2cba601d3f">
+      <ID>Total Operators</ID>
+      <Name>Total Operators</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ccf84106-7bb0-409a-8243-ac2af5f0a106">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4da8a5a-2c4d-4d73-be6e-6ccdc01da22b">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>TotalOperators</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2049fc0d-816c-45a8-b52f-713f057a11bf">
+      <ID>Wage Type</ID>
+      <Name>Wage Type</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="256858a2-5a90-4185-a06a-c36789873861">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee974b02-023f-4518-bde6-42b5fd4ff1df">
+            <TableID>dbo_FactCallCenter</TableID>
+            <ColumnID>WageType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="0632642b-47ed-4095-a9a8-ac94d90b97ce">
+      <ID>Call Center Default NN</ID>
+      <Name>Call Center Default NN</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="f1fc40e6-b42c-4202-8770-b3a4c1ff5d42">
+          <ID>Automatic Responses</ID>
+          <Name>Automatic Responses</Name>
+          <SourceColumnID>Automatic Responses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="64b6c7a5-06d8-49b5-9f15-05fd651068bd">
+          <ID>Average Time Per Issue</ID>
+          <Name>Average Time Per Issue</Name>
+          <SourceColumnID>Average Time Per Issue</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="59be3bd7-fb7f-4a9d-bfee-7ad7cfb7c463">
+          <ID>Calls</ID>
+          <Name>Calls</Name>
+          <SourceColumnID>Calls</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6d7afc05-9022-40e0-b7d3-e1fa7b4696b3">
+          <ID>Day Of Week</ID>
+          <Name>Day Of Week</Name>
+          <SourceColumnID>Day Of Week</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5cf0b551-b8a7-4602-bd00-9ff2396d1ac2">
+          <ID>Fact Call Center ID</ID>
+          <Name>Fact Call Center ID</Name>
+          <SourceColumnID>Fact Call Center ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="731a1100-4e61-43d0-b23d-22a3a915bb75">
+          <ID>Issues Raised</ID>
+          <Name>Issues Raised</Name>
+          <SourceColumnID>Issues Raised</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a0a48b65-7ee2-4177-a3ba-f2acb8844cb2">
+          <ID>Level One Operators</ID>
+          <Name>Level One Operators</Name>
+          <SourceColumnID>Level One Operators</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="4ea9f23a-459d-40f4-ae48-c72dbe18594c">
+          <ID>Level Two Operators</ID>
+          <Name>Level Two Operators</Name>
+          <SourceColumnID>Level Two Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="89ecff71-5884-4214-ab6c-8df73cce0f35">
+          <ID>Orders</ID>
+          <Name>Orders</Name>
+          <SourceColumnID>Orders</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="1eb0b07c-72a8-4e5e-b609-a6746b7f1630">
+          <ID>Service Grade</ID>
+          <Name>Service Grade</Name>
+          <SourceColumnID>Service Grade</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="05f15269-74cd-4aa8-9539-a371dc4032c2">
+          <ID>Shift</ID>
+          <Name>Shift</Name>
+          <SourceColumnID>Shift</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="93a699b8-2530-4b6d-8eed-2e85d481a023">
+          <ID>Total Operators</ID>
+          <Name>Total Operators</Name>
+          <SourceColumnID>Total Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ef756bef-fcdb-41ae-8881-ede99ce5e26d">
+          <ID>Wage Type</ID>
+          <Name>Wage Type</Name>
+          <SourceColumnID>Wage Type</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="76bb4b63-91b6-4d66-9c56-c5a92e08f54b">
+      <ID>Call Center Binned NN</ID>
+      <Name>Call Center Binned NN</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>HOLDOUT_SEED</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="d9247c1c-ceca-4610-b873-9d226a617c3c">
+          <ID>Automatic Responses</ID>
+          <Name>Automatic Responses</Name>
+          <SourceColumnID>Automatic Responses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f32ef084-aec6-4803-bb0a-efc6c128ded2">
+          <ID>Average Time Per Issue</ID>
+          <Name>Average Time Per Issue</Name>
+          <SourceColumnID>Average Time Per Issue</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="c72273ea-849c-424e-91ee-59ad12e8264f">
+          <ID>Calls</ID>
+          <Name>Calls</Name>
+          <SourceColumnID>Calls</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8ca69f31-3db2-4141-aa51-553aa39da05b">
+          <ID>Day Of Week</ID>
+          <Name>Day Of Week</Name>
+          <SourceColumnID>Day Of Week</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="54f36cda-a5c1-4f41-8b20-56d883b5c2ed">
+          <ID>Fact Call Center ID</ID>
+          <Name>Fact Call Center ID</Name>
+          <SourceColumnID>Fact Call Center ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="04f48eef-3983-43a8-b963-4f20702a00d9">
+          <ID>Issues Raised</ID>
+          <Name>Issues Raised</Name>
+          <SourceColumnID>Issues Raised</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d05dcfda-8353-4d57-ba86-2ba8f272a981">
+          <ID>Level One Operators</ID>
+          <Name>Level One Operators</Name>
+          <SourceColumnID>Level One Operators</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="8a0ae45d-e77d-4304-8e79-78386e5b0833">
+          <ID>Level Two Operators</ID>
+          <Name>Level Two Operators</Name>
+          <SourceColumnID>Level Two Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0904bb2a-1e8b-46f7-9620-68fcdb7eb273">
+          <ID>Orders</ID>
+          <Name>Orders</Name>
+          <SourceColumnID>Orders</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="e40381d2-37da-4272-97b7-84bff09fd2eb">
+          <ID>Shift</ID>
+          <Name>Shift</Name>
+          <SourceColumnID>Shift</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="982985f5-1879-4a58-8138-fa4f8ef7da5d">
+          <ID>Total Operators</ID>
+          <Name>Total Operators</Name>
+          <SourceColumnID>Total Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="65a647e8-941b-41ec-a54a-a2dfdaa520c0">
+          <ID>Wage Type</ID>
+          <Name>Wage Type</Name>
+          <SourceColumnID>Wage Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8a592e7c-6607-4f62-905c-14a7ab553794">
+          <ID>Service Grade Binned</ID>
+          <Name>Service Grade</Name>
+          <Description>Temporary column alias</Description>
+          <SourceColumnID>Service Grade 1</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="245c35c2-6780-4abb-b2c1-27db3ff6a5f9">
+      <ID>Call Center -LR</ID>
+      <Name>Call Center -LR</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>HOLDOUT_SEED</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="f45a26dd-4f9a-41ac-b94d-1ab2734d7b60">
+          <ID>Automatic Responses</ID>
+          <Name>Automatic Responses</Name>
+          <SourceColumnID>Automatic Responses</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="55e1ca5f-eb83-4830-9661-80d7ca3abf5b">
+          <ID>Average Time Per Issue</ID>
+          <Name>Average Time Per Issue</Name>
+          <SourceColumnID>Average Time Per Issue</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="23c2f27c-ec8c-4ace-a73b-0199e00351b7">
+          <ID>Calls</ID>
+          <Name>Calls</Name>
+          <SourceColumnID>Calls</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9a48e30e-560c-47bb-a451-00171e22bafb">
+          <ID>Day Of Week</ID>
+          <Name>Day Of Week</Name>
+          <SourceColumnID>Day Of Week</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a32af6e2-50ea-4502-a0d2-c5d9a51405ea">
+          <ID>Fact Call Center ID</ID>
+          <Name>Fact Call Center ID</Name>
+          <SourceColumnID>Fact Call Center ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="aff5e666-3a0d-4ba2-9114-78c0adabc2d2">
+          <ID>Issues Raised</ID>
+          <Name>Issues Raised</Name>
+          <SourceColumnID>Issues Raised</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e6ae8aa6-851c-4c8d-891d-ad618c583c74">
+          <ID>Level Two Operators</ID>
+          <Name>Level Two Operators</Name>
+          <SourceColumnID>Level Two Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8c7cfb70-b08b-4f6d-8da7-b53cae3b2831">
+          <ID>Orders</ID>
+          <Name>Orders</Name>
+          <SourceColumnID>Orders</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5097ab9f-380d-40e1-b149-c1108c1db49d">
+          <ID>Shift</ID>
+          <Name>Shift</Name>
+          <SourceColumnID>Shift</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="eadc5f02-f379-4cd2-bd09-275a1adf7c82">
+          <ID>Total Operators</ID>
+          <Name>Total Operators</Name>
+          <SourceColumnID>Total Operators</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a7f9647a-2180-46e0-af14-a95de348c674">
+          <ID>Wage Type</ID>
+          <Name>Wage Type</Name>
+          <SourceColumnID>Wage Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d4cffb39-49bd-4e3a-b2a9-e1e865b907be">
+          <ID>Service Grade Binned</ID>
+          <Name>Service Grade</Name>
+          <SourceColumnID>Service Grade 1</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="9b9a8704-770e-425b-9812-46f0c6b63793">
+          <ID>Level One Operators</ID>
+          <Name>Level One Operators</Name>
+          <SourceColumnID>Level One Operators</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

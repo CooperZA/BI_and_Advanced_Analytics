@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "LabFinal-DM-cooperz", "LabFinal-DM-cooperz\LabFinal-DM-cooperz.dwproj", "{84977F07-BC88-433D-A7E2-53B4E59D4BB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84977F07-BC88-433D-A7E2-53B4E59D4BB3}.Development|Default.ActiveCfg = Development
+		{84977F07-BC88-433D-A7E2-53B4E59D4BB3}.Development|Default.Build.0 = Development
+		{84977F07-BC88-433D-A7E2-53B4E59D4BB3}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A27F9B1B-BB19-480A-8EFD-FA50B9A59572}
+	EndGlobalSection
+EndGlobal

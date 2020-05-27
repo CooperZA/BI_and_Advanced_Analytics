@@ -1,0 +1,158 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6e888670-4ab9-4026-89fc-f8d4fa7c407f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Shifts</ID>
+  <Name>Shifts</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7990" scrolltop="-8387" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12224" y="20902" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shifts for Call Center" left="-6800" top="-6297" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3995" height="7010" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c00009b0f0000621b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Shifts for Call Center" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shifts and Reduced Response Time" left="-1839" top="-6258" logicalid="3" controlid="2" masterid="0" hint1="0" hint2="0" width="4419" height="8149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c000043110000d51f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Shifts and Reduced Response Time" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7990</DiagramViewPortLeft>
+            <DiagramViewPortTop>-8387</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Adventure Works DW2012</DataSourceID>
+  <Schema>
+    <xs:schema id="Shifts" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Shifts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="84adf991-adc2-4626-9fb8-61eded2e77f9">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Shifts_x0020_for_x0020_Call_x0020_Center" msprop:design-time-name="b8112229-28aa-4883-b520-f6269fa8a023" msprop:IsLogical="True" msprop:FriendlyName="Shifts for Call Center" msprop:DbTableName="Shifts for Call Center" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT DISTINCT &#xD;&#xA;                         WageType, Shift, AVG(AverageTimePerIssue) AS AverageTimePerIssue, AVG(Orders) AS AvgOrders, MIN(Orders) AS MinOrders, MAX(Orders) AS MaxOrders, AVG(Calls) AS AvgCalls, MIN(Calls) AS MinCalls, MAX(Calls) &#xD;&#xA;                         AS MaxCalls, AVG(LevelTwoOperators) AS AvgOperators, MIN(LevelTwoOperators) AS MinOperators, MAX(LevelTwoOperators) AS MaxOperators, AVG(IssuesRaised) AS AvgIssues, MIN(IssuesRaised) AS MinIssues, &#xD;&#xA;                         MAX(IssuesRaised) AS MaxIssues&#xD;&#xA;FROM            FactCallCenter&#xD;&#xA;GROUP BY Shift, WageType" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WageType" msprop:design-time-name="d72b9150-4535-4371-b3f6-31d371327400" msprop:DbColumnName="WageType" msprop:FriendlyName="WageType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Shift" msprop:design-time-name="563856dc-7770-4427-a7b0-6959e0204be4" msprop:DbColumnName="Shift" msprop:FriendlyName="Shift" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AverageTimePerIssue" msdata:ReadOnly="true" msprop:design-time-name="27f2d10b-e3cb-4176-be58-29180f5ba8b6" msprop:DbColumnName="AverageTimePerIssue" msprop:FriendlyName="AverageTimePerIssue" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvgOrders" msdata:ReadOnly="true" msprop:design-time-name="252af3f3-ce54-4c31-810c-a2ecbe4e815b" msprop:DbColumnName="AvgOrders" msprop:FriendlyName="AvgOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinOrders" msdata:ReadOnly="true" msprop:design-time-name="1fa9880b-0289-4128-9b3d-9c00dfc09c41" msprop:DbColumnName="MinOrders" msprop:FriendlyName="MinOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="MaxOrders" msdata:ReadOnly="true" msprop:design-time-name="d70f2865-e44c-40ec-bc27-4fc0f762c901" msprop:DbColumnName="MaxOrders" msprop:FriendlyName="MaxOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvgCalls" msdata:ReadOnly="true" msprop:design-time-name="a90c7fd8-a69a-4804-8413-ba1642eb001e" msprop:DbColumnName="AvgCalls" msprop:FriendlyName="AvgCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinCalls" msdata:ReadOnly="true" msprop:design-time-name="9e375dbd-8a24-4c85-b9b1-3f838915f461" msprop:DbColumnName="MinCalls" msprop:FriendlyName="MinCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="MaxCalls" msdata:ReadOnly="true" msprop:design-time-name="c12d8d2b-e087-4227-afda-bf732227cf23" msprop:DbColumnName="MaxCalls" msprop:FriendlyName="MaxCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvgOperators" msdata:ReadOnly="true" msprop:design-time-name="207ff1e7-bc9e-48a8-950a-0cca690e8897" msprop:DbColumnName="AvgOperators" msprop:FriendlyName="AvgOperators" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinOperators" msdata:ReadOnly="true" msprop:design-time-name="53356356-5e3f-40c2-9707-ffb35000068e" msprop:DbColumnName="MinOperators" msprop:FriendlyName="MinOperators" type="xs:short" minOccurs="0" />
+                  <xs:element name="MaxOperators" msdata:ReadOnly="true" msprop:design-time-name="c660807e-aaa0-4b27-be04-a29012b81bf9" msprop:DbColumnName="MaxOperators" msprop:FriendlyName="MaxOperators" type="xs:short" minOccurs="0" />
+                  <xs:element name="AvgIssues" msdata:ReadOnly="true" msprop:design-time-name="dac1ebe1-3893-4036-993d-622bac617cfc" msprop:DbColumnName="AvgIssues" msprop:FriendlyName="AvgIssues" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinIssues" msdata:ReadOnly="true" msprop:design-time-name="9aedeec4-d729-406a-948e-cfc206527331" msprop:DbColumnName="MinIssues" msprop:FriendlyName="MinIssues" type="xs:short" minOccurs="0" />
+                  <xs:element name="MaxIssues" msdata:ReadOnly="true" msprop:design-time-name="1e0e87df-f0fa-4774-aa09-541f97efaca1" msprop:DbColumnName="MaxIssues" msprop:FriendlyName="MaxIssues" type="xs:short" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Shifts_x0020_and_x0020_Reduced_x0020_Response_x0020_Time" msprop:design-time-name="f54cf6bc-6ab0-4bac-9e6f-e5440ae6dc42" msprop:IsLogical="True" msprop:FriendlyName="Shifts and Reduced Response Time" msprop:DbTableName="Shifts and Reduced Response Time" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT DISTINCT &#xD;&#xA;                         WageType, Shift, AVG(Orders) AS AvgOrders, AVG(AverageTimePerIssue) AS AverageTimePerIssue, MIN(Orders) AS MinOrders, MAX(Orders) AS MaxOrders, AVG(Calls) AS AvgCalls, MIN(Calls) AS MinCalls, MAX(Calls) &#xD;&#xA;                         AS MaxCalls, AVG(LevelTwoOperators) AS AvgOperators, MIN(LevelTwoOperators) AS MinOperators, MAX(LevelTwoOperators) AS MaxOperators, AVG(IssuesRaised) AS AvgIssues, MIN(IssuesRaised) AS MinIssues, &#xD;&#xA;                         MAX(IssuesRaised) AS MaxIssues, AVG(AverageTimePerIssue) * 0.9 AS AvgResponseTime90Perc, AVG(AverageTimePerIssue) * 0.5 AS AvgResponseTime50Perc&#xD;&#xA;FROM            FactCallCenter&#xD;&#xA;GROUP BY Shift, WageType" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WageType" msprop:design-time-name="3aaa9e83-e406-403f-94dd-1c19a6c3d5df" msprop:DbColumnName="WageType" msprop:FriendlyName="WageType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Shift" msprop:design-time-name="1938f212-798d-474c-88fb-a51a887f4395" msprop:DbColumnName="Shift" msprop:FriendlyName="Shift" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AvgOrders" msdata:ReadOnly="true" msprop:design-time-name="3b9760d0-d24e-4cc2-b1e5-4534acffca49" msprop:DbColumnName="AvgOrders" msprop:FriendlyName="AvgOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="AverageTimePerIssue" msdata:ReadOnly="true" msprop:design-time-name="e1ac7067-e8e2-44e8-b596-92058078e9f0" msprop:DbColumnName="AverageTimePerIssue" msprop:FriendlyName="AverageTimePerIssue" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinOrders" msdata:ReadOnly="true" msprop:design-time-name="32b3046c-9606-4e76-a307-6765f73d9e67" msprop:DbColumnName="MinOrders" msprop:FriendlyName="MinOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="MaxOrders" msdata:ReadOnly="true" msprop:design-time-name="d25b569a-74e7-4862-8e6a-b6264a9b0588" msprop:DbColumnName="MaxOrders" msprop:FriendlyName="MaxOrders" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvgCalls" msdata:ReadOnly="true" msprop:design-time-name="5a094665-6b7f-4bbb-9e86-514b4925c7b6" msprop:DbColumnName="AvgCalls" msprop:FriendlyName="AvgCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinCalls" msdata:ReadOnly="true" msprop:design-time-name="221acb12-0665-4719-acce-6a0ef19638fb" msprop:DbColumnName="MinCalls" msprop:FriendlyName="MinCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="MaxCalls" msdata:ReadOnly="true" msprop:design-time-name="28903821-7071-488a-911f-650ca210703a" msprop:DbColumnName="MaxCalls" msprop:FriendlyName="MaxCalls" type="xs:int" minOccurs="0" />
+                  <xs:element name="AvgOperators" msdata:ReadOnly="true" msprop:design-time-name="663377d9-2a7b-4ed3-a4a4-6f10107af85b" msprop:DbColumnName="AvgOperators" msprop:FriendlyName="AvgOperators" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinOperators" msdata:ReadOnly="true" msprop:design-time-name="685ad3d7-434c-4dbb-b7c8-8033d845552d" msprop:DbColumnName="MinOperators" msprop:FriendlyName="MinOperators" type="xs:short" minOccurs="0" />
+                  <xs:element name="MaxOperators" msdata:ReadOnly="true" msprop:design-time-name="5f1f9351-cae9-4a81-bf27-e20831748a66" msprop:DbColumnName="MaxOperators" msprop:FriendlyName="MaxOperators" type="xs:short" minOccurs="0" />
+                  <xs:element name="AvgIssues" msdata:ReadOnly="true" msprop:design-time-name="d8bb43c2-5ff6-483f-a608-10830fb88bec" msprop:DbColumnName="AvgIssues" msprop:FriendlyName="AvgIssues" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinIssues" msdata:ReadOnly="true" msprop:design-time-name="c08a694b-f4cf-42cb-ba43-10a1919925cb" msprop:DbColumnName="MinIssues" msprop:FriendlyName="MinIssues" type="xs:short" minOccurs="0" />
+                  <xs:element name="MaxIssues" msdata:ReadOnly="true" msprop:design-time-name="c78f48eb-74a6-4236-9969-4911b8a8550a" msprop:DbColumnName="MaxIssues" msprop:FriendlyName="MaxIssues" type="xs:short" minOccurs="0" />
+                  <xs:element name="AvgResponseTime90Perc" msdata:ReadOnly="true" msprop:design-time-name="b076f77b-501d-495f-9714-9136a79604ce" msprop:DbColumnName="AvgResponseTime90Perc" msprop:FriendlyName="AvgResponseTime90Perc" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="AvgResponseTime50Perc" msdata:ReadOnly="true" msprop:design-time-name="dd0aeac5-b43d-4ea0-89c4-f6bbf8e9c16b" msprop:DbColumnName="AvgResponseTime50Perc" msprop:FriendlyName="AvgResponseTime50Perc" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Shifts xmlns="" />
+  </Schema>
+</DataSourceView>

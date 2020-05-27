@@ -1,0 +1,240 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cf8a4493-19ac-4022-87f0-22d196e4c026" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Catalog Cross Sell_clustering</ID>
+  <Name>Catalog Cross Sell_clustering</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_CatalogCrossSell</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d7411cb1-2ff6-4eb3-b0d0-d00f66d198c3">
+    <DataSourceViewID>MIS422 Dataset DM Assignment</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="774f5722-4f0d-4608-b8b2-57d077f4a262">
+      <ID>Clothing Division</ID>
+      <Name>Clothing Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5b34590-a911-408d-b022-8db50728dcb9">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2723e9c8-7405-4c6f-bc86-bb0193ebb53e">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Clothing_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9291a576-c3fe-4d20-9984-9b8d13084c8a">
+      <ID>Computers Division</ID>
+      <Name>Computers Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbcd79e2-de2a-4222-87f5-a2b89a85bc0e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d061c0c9-2de7-494c-ac86-43c29952c374">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Computers_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5ebb2923-0d78-4c37-9573-f4208e2665c3">
+      <ID>Customer Number</ID>
+      <Name>Customer Number</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01d6cb36-ffc0-420a-851b-6c5f5012471c">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2ead092-b983-4de2-b6c0-77960db9841b">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Customer_x0020_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c1f529e6-c1f7-49fb-a1b7-2430f19ba40a">
+      <ID>Garden Division</ID>
+      <Name>Garden Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39bb8de1-0aa1-4d70-a6da-488109bed4e1">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f95f64d-0a41-49ab-97dd-c04aef3fa052">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Garden_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1f21403a-92b5-4f5a-b423-17f60224b9f1">
+      <ID>Housewares Division</ID>
+      <Name>Housewares Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1810adb7-0d29-4d58-ab90-5b73a8e858e0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d576cb09-fd7f-431e-8307-c226ef560933">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Housewares_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="34b0752e-0cf2-42ca-b312-9f93e6fe008b">
+      <ID>Jewelry Division</ID>
+      <Name>Jewelry Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cacd46e3-9a4e-4df7-91e4-2f99839cac91">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4d5f6c5-539c-4a21-86fc-fe79fb1473bc">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Jewelry_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e3da48b2-398a-492c-a5c6-9b6afaf63f71">
+      <ID>Novelty Gift Division</ID>
+      <Name>Novelty Gift Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ccd291e-976d-43f4-8f17-c2427d80e8cb">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42dbdbe3-b347-4941-a148-62b1a3c847df">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Novelty_x0020_Gift_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2d2a71aa-57dd-4356-9aa9-a16da3db91a1">
+      <ID>Personal Electronics Division</ID>
+      <Name>Personal Electronics Division</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="88bca6a5-7639-45e3-a536-97b76fa1aedc">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b2f59f61-1d6a-4d4b-8dd9-10c02121008f">
+            <TableID>dbo_CatalogCrossSell</TableID>
+            <ColumnID>Personal_x0020_Electronics_x0020_Division</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="247f32c2-52a2-4424-9446-a9fed516ad16">
+      <ID>Catalog Cross Sell</ID>
+      <Name>Catalog Cross Sell</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="22485f83-1cbf-480f-aa16-fdc0d4a40c56">
+          <ID>Clothing Division</ID>
+          <Name>Clothing Division</Name>
+          <SourceColumnID>Clothing Division</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="e10e52c7-6e52-48a1-9def-1829761d82ab">
+          <ID>Computers Division</ID>
+          <Name>Computers Division</Name>
+          <SourceColumnID>Computers Division</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7e5c9556-c61c-460b-9595-e85c1ae4facb">
+          <ID>Customer Number</ID>
+          <Name>Customer Number</Name>
+          <SourceColumnID>Customer Number</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="099b39c6-a570-4b74-abd8-1679f6eb5963">
+          <ID>Garden Division</ID>
+          <Name>Garden Division</Name>
+          <SourceColumnID>Garden Division</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fd465290-e535-4ec6-a21f-f7d3bae8366e">
+          <ID>Housewares Division</ID>
+          <Name>Housewares Division</Name>
+          <SourceColumnID>Housewares Division</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="59664479-0009-479b-ac30-2a061d312e2f">
+          <ID>Jewelry Division</ID>
+          <Name>Jewelry Division</Name>
+          <SourceColumnID>Jewelry Division</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="97e2d944-5d0c-49a1-8260-2d72813a9d63">
+          <ID>Novelty Gift Division</ID>
+          <Name>Novelty Gift Division</Name>
+          <SourceColumnID>Novelty Gift Division</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5ac94b12-bd35-46a5-9ab2-72cbdc8bd7fc">
+          <ID>Personal Electronics Division</ID>
+          <Name>Personal Electronics Division</Name>
+          <SourceColumnID>Personal Electronics Division</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+  <ddl100_100:HoldoutMaxCases>1000</ddl100_100:HoldoutMaxCases>
+</MiningStructure>

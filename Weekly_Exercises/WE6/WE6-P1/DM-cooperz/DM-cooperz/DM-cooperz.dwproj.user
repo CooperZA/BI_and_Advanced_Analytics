@@ -1,0 +1,39 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2012</Id>
+            <Name>Adventure Works DW2012</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOJiGbME2u0mnxVSAAZdfmgAAAAAuAAAAQQBkAHYAZQBuAHQAdQByAGUAIABXAG8AcgBrAHMAIABEAFcAMgAwADEAMgAAAANmAADAAAAAEAAAAJdwcVJoQFL2x+mXuUUpCj4AAAAABIAAAKAAAAAQAAAAP254FCvbdEgkVywEGMWPrBgAAAB1OpWHp6X9FT0gCfL/6xcCyf+FDJm5SlQUAAAAsQlQ9XXj01UjmX2vgeYrQgIrBIU=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>F19 MIS422 Individual DB Cooper Zach</Id>
+            <Name>F19 MIS422 Individual DB Cooper Zach</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOJiGbME2u0mnxVSAAZdfmgAAAABKAAAARgAxADkAIABNAEkAUwA0ADIAMgAgAEkAbgBkAGkAdgBpAGQAdQBhAGwAIABEAEIAIABDAG8AbwBwAGUAcgAgAFoAYQBjAGgAAAADZgAAwAAAABAAAADTrCUBNAiIxOahZpyZAIoKAAAAAASAAACgAAAAEAAAALHyfyfHuYnKsH2fsu6z2EgYAAAAWxIFys7GUDmozG1uOlVJkePwDFA8coIPFAAAADKe0Vj7hqxUc7QKhvZAFkX5pILD</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2012</Id>
+            <Name>Adventure Works DW2012</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOJiGbME2u0mnxVSAAZdfmgAAAAAuAAAAQQBkAHYAZQBuAHQAdQByAGUAIABXAG8AcgBrAHMAIABEAFcAMgAwADEAMgAAAANmAADAAAAAEAAAACG2ARrnOXxFzsbNFdDEusIAAAAABIAAAKAAAAAQAAAAk3s3V53hO5Z+yuHCvNIvGhgAAAAn+NCkAFUMSCY6E8dOBz29ZWWMXvR6OYkUAAAA1NX+yBrSojRg25/Ml+2yHW+1kww=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>F19 MIS422 Individual DB Cooper Zach</Id>
+            <Name>F19 MIS422 Individual DB Cooper Zach</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOJiGbME2u0mnxVSAAZdfmgAAAABKAAAARgAxADkAIABNAEkAUwA0ADIAMgAgAEkAbgBkAGkAdgBpAGQAdQBhAGwAIABEAEIAIABDAG8AbwBwAGUAcgAgAFoAYQBjAGgAAAADZgAAwAAAABAAAAAtSYLVTATj7wCA+cFPv4cXAAAAAASAAACgAAAAEAAAAHlk635FXmGh5iVwy9IdiT8YAAAArSVJLs8oM0nmaBzk6t5Y2/zqokQdiDmDFAAAACT6wmyUXeg9u4PFlFe6PqD+q7wc</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>misbi.cbe.wwu.edu\multi</TargetServer>
+        <TargetDatabase>DM-cooperz</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

@@ -1,0 +1,17 @@
+World Atlas Fact Dataset
+https://datasource.kapsarc.org/explore/dataset/world-atlas-fact-dataset-2018/table/?disjunctive.capital&disjunctive.country_name_long&disjunctive.frequency
+
+other world data tables
+https://knoema.com/atlas/topics/Environment
+
+Two measures
+Average CO2 Emissions done
+Total CO2 Emissions done
+
+Two columns
+CO2 Emissions per GDP done
+CO2 Emissions per Population done
+CO2 Emissions per Ease of doing business index (lower is less CO2) done
+
+Todo:
+Visualization (4 pages)
