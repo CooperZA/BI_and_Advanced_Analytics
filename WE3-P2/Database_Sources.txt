@@ -1,0 +1,5 @@
+World Atlas Fact Dataset
+https://datasource.kapsarc.org/explore/dataset/world-atlas-fact-dataset-2018/table/?disjunctive.capital&disjunctive.country_name_long&disjunctive.frequency
+
+other world data tables
+https://knoema.com/atlas/topics/Environment
